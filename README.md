@@ -15,12 +15,10 @@
 - **Automação:** APIs de transportadoras (Braspress, Daytona, Correios)
 - **Notificações:** Firebase + Nodemailer
 
----
 
 ## 📌 Visão Geral
 Este sistema foi desenvolvido para automatizar e otimizar o fluxo de devoluções, garantindo maior controle e transparência em cada etapa do processo.
 
----
 
 ## 📂 Estrutura do Projeto
 
@@ -34,8 +32,6 @@ junoimportadora-devolucao-sistema/
 
 └── README.md           # Este arquivo
 
----
-
 ## 🛠 Tecnologias Utilizadas
 
 Frontend: React, React Native
@@ -43,7 +39,6 @@ Backend: Node.js (Express)
 Banco de Dados: Supabase (PostgreSQL)
 Integrações: APIs de transportadoras, Firebase
 
----
 
 ## 🤝 Contribuição
 Se você deseja contribuir com o projeto, siga os passos abaixo:
@@ -54,7 +49,6 @@ Commit suas mudanças (git commit -m 'Adiciona nova feature').
 Faça push para a branch (git push origin feature/sua-feature).
 Abra um Pull Request.
 
----
 
 ## 📧 Contato
 Para dúvidas ou sugestões, entre em contato:
