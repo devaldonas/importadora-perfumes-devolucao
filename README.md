@@ -73,6 +73,6 @@ Abra um Pull Request.
 ## 📧 Contato
 Para dúvidas ou sugestões, entre em contato:
 
-E-mail: devaldo.nas@gmail.com
+E-mail: devaldo@junoimportadora.com.br
 
 GitHub: devaldonas
