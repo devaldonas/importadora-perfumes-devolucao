@@ -3,7 +3,7 @@
 **Objetivo:** Automatizar e simplificar o processo de devolução de perfumes árabes, integrando analistas, transportadoras e clientes.
 
 ## 📂 Documentação
-- [Engenharia de Requisitos](docs/engenharia-de-requisitos.md)
+- [Engenharia de Requisitos]([docs/engenharia-de-requisitos.md](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/engenharia-de-requisitos.md))
 - [Fluxos de Processo](docs/fluxos-de-processo.md)
 - [Configuração do Supabase](docs/configuracao-supabase.md)
 - [Integração com APIs](docs/api-integracao.md)
