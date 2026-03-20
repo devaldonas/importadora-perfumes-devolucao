@@ -1,4 +1,5 @@
 # Sistema de Gestão e Controle de Devolução de Produtos - Importadora de Perfumes Árabes
+(Em desenvolvimento)
 
 **Objetivo:** Automatizar e simplificar o processo de devolução de perfumes árabes, integrando analistas, transportadoras e clientes.
 
@@ -48,6 +49,23 @@ Crie uma branch para sua feature (git checkout -b feature/sua-feature).
 Commit suas mudanças (git commit -m 'Adiciona nova feature').
 Faça push para a branch (git push origin feature/sua-feature).
 Abra um Pull Request.
+
+##🚶‍➡️Próximos Passos
+
+Implementar Rotas para NFD:
+Criar rotas para upload e validação de Notas Fiscais de Devolução (NFD).
+
+Acompanhamento de Coletas:
+Implementar rotas para rastrear e atualizar o status das coletas.
+
+Painel Financeiro:
+Desenvolver rotas para gerenciar e visualizar informações financeiras.
+
+Integração com APIs de Transportadoras:
+Conectar o sistema às APIs das transportadoras para rastreamento e agendamento de coletas.
+
+Testes e Validações:
+Testar todas as funcionalidades no Postman para garantir que tudo está funcionando conforme esperado.
 
 
 ## 📧 Contato
