@@ -10,5 +10,5 @@ Formulário para upload e validação de NFD, status de validação, botões de 
 
 <img width="694" height="506" alt="Coletas" src="https://github.com/user-attachments/assets/d5c7ea2d-404c-426a-9077-9ac638ffb22e" />
 
-Tabela de coletas, mapa de rastreamento, filtros por transportadora/status.
+Tabela de coletas, mapa de rastreamento, filtros por data/transportadora/status.
 
