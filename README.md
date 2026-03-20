@@ -43,6 +43,8 @@ Backend: Node.js (Express)
 Banco de Dados: Supabase (PostgreSQL)
 Integrações: APIs de transportadoras, Firebase
 
+---
+
 🤝 Contribuição
 Se você deseja contribuir com o projeto, siga os passos abaixo:
 
@@ -51,6 +53,8 @@ Crie uma branch para sua feature (git checkout -b feature/sua-feature).
 Commit suas mudanças (git commit -m 'Adiciona nova feature').
 Faça push para a branch (git push origin feature/sua-feature).
 Abra um Pull Request.
+
+---
 
 📧 Contato
 Para dúvidas ou sugestões, entre em contato:
