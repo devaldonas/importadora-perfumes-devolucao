@@ -36,7 +36,7 @@ junoimportadora-devolucao-sistema/
 
 ---
 
-🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 Frontend: React, React Native
 Backend: Node.js (Express)
@@ -45,7 +45,7 @@ Integrações: APIs de transportadoras, Firebase
 
 ---
 
-🤝 Contribuição
+## 🤝 Contribuição
 Se você deseja contribuir com o projeto, siga os passos abaixo:
 
 Faça um fork do projeto.
@@ -56,7 +56,7 @@ Abra um Pull Request.
 
 ---
 
-📧 Contato
+## 📧 Contato
 Para dúvidas ou sugestões, entre em contato:
 
 E-mail: devaldo.nas@gmail.com
