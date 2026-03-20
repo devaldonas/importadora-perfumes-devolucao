@@ -4,9 +4,9 @@
 
 ## 📂 Documentação
 - [Engenharia de Requisitos](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/engenharia-de-requisitos.md)
-- [Fluxos de Processo](docs/fluxos-de-processo.md)
-- [Configuração do Supabase](docs/configuracao-supabase.md)
-- [Integração com APIs](docs/api-integracao.md)
+- [Diagrama de caso de uso](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/Diagrama%20de%20Caso%20de%20Uso.png)
+- [Configuração do Supabase](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/configuracao-supabase.md)
+- [Integração com APIs](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/api-integracao.md)
 
 ## 🛠 Stack Tecnológica
 - **Frontend:** React
