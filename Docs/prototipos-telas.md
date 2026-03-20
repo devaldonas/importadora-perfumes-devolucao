@@ -12,3 +12,6 @@ Formulário para upload e validação de NFD, status de validação, botões de 
 
 Tabela de coletas, mapa de rastreamento, filtros por data/transportadora/status.
 
+<img width="680" height="500" alt="Financeiro" src="https://github.com/user-attachments/assets/2efa22d6-42f9-47e6-82ff-21f743af1308" />
+
+Painel financeiro, com métricas de descontos concedidos, pendências e processos concluídos
