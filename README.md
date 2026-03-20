@@ -40,15 +40,7 @@ Backend: Node.js (Express)
 Banco de Dados: Supabase (PostgreSQL)
 Integrações: APIs de transportadoras, Firebase
 
-
-## 🤝 Contribuição
-Se você deseja contribuir com o projeto, siga os passos abaixo:
-
-Faça um fork do projeto.
-Crie uma branch para sua feature (git checkout -b feature/sua-feature).
-Commit suas mudanças (git commit -m 'Adiciona nova feature').
-Faça push para a branch (git push origin feature/sua-feature).
-Abra um Pull Request.
+---
 
 ## 🚶‍➡️ Próximos Passos
 
@@ -67,6 +59,16 @@ Conectar o sistema às APIs das transportadoras para rastreamento e agendamento 
 Testes e Validações:
 Testar todas as funcionalidades no Postman para garantir que tudo está funcionando conforme esperado.
 
+---
+
+## 🤝 Contribuição
+Se você deseja contribuir com o projeto, siga os passos abaixo:
+
+Faça um fork do projeto.
+Crie uma branch para sua feature (git checkout -b feature/sua-feature).
+Commit suas mudanças (git commit -m 'Adiciona nova feature').
+Faça push para a branch (git push origin feature/sua-feature).
+Abra um Pull Request.
 
 ## 📧 Contato
 Para dúvidas ou sugestões, entre em contato:
