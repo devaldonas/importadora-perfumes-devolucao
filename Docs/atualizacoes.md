@@ -45,3 +45,28 @@ WHERE table_name = 'nfd' AND column_name = 'frete';
 
 -- 9. Verificar os dados convertidos
 SELECT id, frete FROM nfd;
+
+
+🔐 Atualização de Permissões no Supabase
+Permissões na Tabela nfd
+
+Descrição: Concedidas permissões totais para usuários autenticados e para a service_role na tabela nfd e na sequência nfd_id_seq.
+Motivo: Garantir que o sistema tenha as permissões necessárias para operar sem erros de acesso.
+Comandos SQL Utilizados:
+sql
+Copiar
+
+-- Conceder permissões para a tabela nfd
+GRANT ALL ON TABLE nfd TO authenticated;
+GRANT ALL ON TABLE nfd TO service_role;
+
+-- Conceder permissões para a sequência nfd_id_seq
+GRANT ALL ON SEQUENCE nfd_id_seq TO authenticated;
+GRANT ALL ON SEQUENCE nfd_id_seq TO service_role;
+
+
+📝 Atualizações no Backend
+Validação do Campo frete
+
+Descrição: O backend foi atualizado para validar e receber apenas os valores "CIF" ou "FOB" no campo frete.
+Motivo: Garantir que os dados recebidos estejam de acordo com as novas regras do banco de dados.
