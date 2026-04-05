@@ -1,0 +1,29 @@
+.validacao-nfd-container {
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.nfd-data {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
