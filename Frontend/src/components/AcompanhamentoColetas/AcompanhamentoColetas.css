@@ -1,0 +1,39 @@
+.acompanhamento-coletas-container {
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.solicitar-coleta {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.solicitar-coleta select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--blue-2);
+}
+
+.coletas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coletas-table th, .coletas-table td {
+  border: 1px solid var(--blue-2);
+  padding: 8px;
+  text-align: left;
+}
+
+.coletas-table th {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.alert {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
