@@ -123,3 +123,23 @@
 .ocorrencias-table tr:hover {
   background-color: #f8f9fa;
 }
+
+.status-pendente {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-aguardando-nfd {
+  color: blue;
+  font-weight: bold;
+}
+
+.status-aguardando-coleta {
+  color: purple;
+  font-weight: bold;
+}
+
+.status-concluída {
+  color: green;
+  font-weight: bold;
+}
