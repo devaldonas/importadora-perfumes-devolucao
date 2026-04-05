@@ -1,19 +1,39 @@
-import React from 'react';
-import './App.css';
-import Ocorrencias from './components/Ocorrencias/Ocorrencias';
-import ValidacaoNFD from './components/ValidacaoNFD/ValidacaoNFD';
-import AcompanhamentoColetas from './components/AcompanhamentoColetas/AcompanhamentoColetas';
-import PainelFinanceiro from './components/PainelFinanceiro/PainelFinanceiro';
+import { createClient } from '@supabase/supabase-js';
 
-function App() {
-  return (
-    <div className="App">
-      <Ocorrencias />
-      <ValidacaoNFD />
-      <AcompanhamentoColetas />
-      <PainelFinanceiro />
-    </div>
-  );
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error("Variáveis de ambiente REACT_APP_SUPABASE_URL e REACT_APP_SUPABASE_KEY são necessárias.");
 }
 
-export default App;
+// Configuração mais robusta do cliente
+const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    persistSession: true,
+    autoRefreshToken: true,
+    detectSessionInUrl: true,
+    storage: localStorage
+  },
+  global: {
+    headers: {
+      'apikey': supabaseKey,
+    }
+  }
+});
+
+// Log para debug
+console.log('Supabase client inicializado com URL:', supabaseUrl);
+
+// Teste de conexão automático
+supabase.from('coletas').select('count', { count: 'exact', head: true })
+  .then(({ count, error }) => {
+    if (error) {
+      console.error('❌ Erro de conexão com tabela coletas:', error.message);
+      console.error('Status do erro:', error.status);
+    } else {
+      console.log('✅ Conexão com tabela coletas OK! Total:', count);
+    }
+  });
+
+export default supabase;
