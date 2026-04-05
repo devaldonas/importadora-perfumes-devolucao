@@ -1,0 +1,46 @@
+/* src/styles/global.css */
+
+:root {
+  /* Cores exportadas do Figma */
+  --black: #000000;
+  --white: #FFFFFF;
+  --blue-1: #718191;
+  --blue-2: #CED4DA;
+  --blue-3: #D9D9D9;
+  --blue-4: #8E959C;
+  --blue-5: #9AB9C3;
+  --green: #AEB8A6;
+  --purple: #C0ADD2;
+  --pink: #D0B8B8;
+
+  /* Cores já existentes */
+  --primary-color: #6C63FF;
+  --secondary-color: #FF6584;
+  --background-color: #F8F9FA;
+  --text-color: #212529;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid var(--blue-2);
+  border-radius: 5px;
+  margin-right: 10px;
+}
