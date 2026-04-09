@@ -39,6 +39,7 @@ Frontend: React, React Native
 Backend: Node.js (Express)
 Banco de Dados: Supabase (PostgreSQL)
 Integrações: APIs de transportadoras, Firebase
+Ferramenta de testes: Postman 
 
 ---
 
