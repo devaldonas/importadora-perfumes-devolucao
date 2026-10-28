@@ -60,3 +60,55 @@ DEVOLUÇÃO/
 │   └── .env
 │
 └── README.md
+
+⚙️ Como rodar o projeto localmente
+1. Pré-requisitos
+Node.js (v18+)
+
+Docker e Docker Compose instalados
+
+2. Subir o Banco de Dados (PostgreSQL)
+bash
+docker run --name postgres-devolucao -e POSTGRES_PASSWORD=postgres123 -e POSTGRES_USER=postgres -e POSTGRES_DB=devolucao -p 5432:5432 -d postgres:15
+3. Configurar o Backend
+bash
+cd Backend
+npm install
+# Crie o arquivo .env com base nas variáveis necessárias (veja abaixo)
+npm run dev
+Variáveis essenciais no Backend/.env:
+
+env
+PORT=3000
+PGHOST=localhost
+PGPORT=5432
+PGUSER=postgres
+PGPASSWORD=postgres123
+PGDATABASE=devolucao
+CERTIFICADO_PATH=./certs/seu-certificado.pfx
+CERTIFICADO_SENHA=sua_senha
+CNPJ_EMPRESA=00000000000000
+UF_CODIGO=35
+AMBIENTE_SEFAZ=1 # 1 = Produção, 2 = Homologação
+4. Configurar o Frontend
+bash
+cd Frontend
+npm install
+npm start
+
+📌 Próximos Passos (Roadmap)
+□ Automação de Coletas: Conectar diretamente com as APIs da Braspress, Daytona e Correios.
+□ Notificações: Implementar alertas por e-mail (Nodemailer) para prazos de NFD e Coletas.
+□ Gestão de Usuários: Implementar login real (JWT) com controle de permissões (Analista vs. Financeiro).
+□ Deploy em Nuvem: Subir o Backend (Render/Railway) e Frontend (Vercel).
+
+Autor
+Devaldo Gonçalves do Nascimento
+
+LinkedIn: linkedin.com/in/devaldo-nascimento-263b81105
+
+GitHub: github.com/devaldonas
+
+E-mail: devaldo.nas@gmail.com
+
+Este projeto foi desenvolvido como parte da minha transição de carreira para Desenvolvimento Full Stack, unindo 20 anos de experiência em processos industriais com tecnologia moderna.
