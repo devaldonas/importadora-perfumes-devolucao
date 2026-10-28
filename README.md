@@ -111,4 +111,4 @@ GitHub: github.com/devaldonas
 
 E-mail: devaldo.nas@gmail.com
 
-Este projeto foi desenvolvido como parte da minha transição de carreira para Desenvolvimento Full Stack, unindo 20 anos de experiência em processos industriais com tecnologia moderna.
+Este projeto foi desenvolvido para resolver um problema real de logística reversa, unindo minha experiência em processos industriais com tecnologia moderna.
