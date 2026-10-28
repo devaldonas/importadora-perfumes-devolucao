@@ -1,0 +1,35 @@
+.painel-financeiro-container {
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.ocorrencias-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ocorrencias-table th, .ocorrencias-table td {
+  border: 1px solid var(--blue-2);
+  padding: 8px;
+  text-align: left;
+}
+
+.ocorrencias-table th {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.alert {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}

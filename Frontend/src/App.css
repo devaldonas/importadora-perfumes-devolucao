@@ -1,0 +1,204 @@
+/* =====================================================
+   RESET E ESTILOS GLOBAIS (Minimalista e Moderno)
+   ===================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6; /* Fundo cinza muito claro, estilo SaaS moderno */
+  color: #111827; /* Texto quase preto, mais suave que o preto puro */
+}
+
+.App {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  padding: 24px !important;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+header p {
+  color: #10b981; /* Verde para indicar que está conectado */
+  font-weight: 500;
+}
+
+/* Layout principal (Sidebar + Conteúdo) */
+.ocorrencias-header {
+  display: flex;
+  gap: 24px;
+}
+
+/* Sidebar (Menu Lateral) */
+.sidebar {
+  background-color: #ffffff !important;
+  border-radius: 12px;
+  padding: 16px 0 !important;
+  min-width: 240px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.sidebar-item {
+  padding: 12px 24px;
+  cursor: pointer;
+  color: #4b5563;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-item:hover {
+  background-color: #f9fafb;
+  color: #4f46e5; /* Azul índigo moderno */
+  border-left-color: #4f46e5;
+}
+
+.sidebar-item:first-child {
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+/* Cards de Métricas (Topo) */
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.metric-card h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.metric-card p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Remover as cores fortes dos cards antigos */
+.metric-card.total, .metric-card.pending, .metric-card.concluded, .metric-card.avg-time {
+  background: #ffffff;
+}
+
+/* Tabelas Modernas */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+th {
+  background-color: #f9fafb !important;
+  color: #374151 !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  border: none !important;
+}
+
+td {
+  padding: 16px !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  color: #4b5563;
+  font-size: 14px;
+  border: none !important;
+  background-color: #ffffff;
+}
+
+tr:last-child td {
+  border-bottom: none !important;
+}
+
+tr:hover td {
+  background-color: #f9fafb;
+}
+
+/* Inputs e Formulários */
+input, select, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111827;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Botões Modernos */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+button[type="submit"], .btn-primary {
+  background-color: #4f46e5;
+  color: white;
+}
+
+button[type="submit"]:hover, .btn-primary:hover {
+  background-color: #4338ca;
+}
+
+/* Ajustes de containers específicos */
+.ocorrencias-container, .nfd-container {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
