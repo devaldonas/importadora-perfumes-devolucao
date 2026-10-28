@@ -1,79 +1,62 @@
-# Sistema de Gestão e Controle de Devolução de Produtos - Importadora de Perfumes Árabes
-(Em desenvolvimento)
+# 🧴 Sistema de Gestão e Controle de Devoluções - Importadora de Perfumes
 
-**Objetivo:** Automatizar e simplificar o processo de devolução de perfumes árabes, integrando analistas, transportadoras e clientes.
+> **Status do Projeto:** 🟢 Em desenvolvimento ativo (Backend e Banco de Dados 100% funcionais em ambiente local)
 
-## 📂 Documentação
-- [Engenharia de Requisitos](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/engenharia-de-requisitos.md)
-- [Diagrama de caso de uso](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/Diagrama%20de%20Caso%20de%20Uso.png)
-- [Configuração do Supabase](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/configuracao-supabase.md)
-- [Integração com APIs](https://github.com/devaldonas/importadora-perfumes-devolucao/blob/main/Docs/api-integracao.md)
+**Objetivo:** Automatizar e simplificar o processo de logística reversa e devolução de perfumes árabes, integrando analistas comerciais, setor financeiro, transportadoras e clientes.
+
+---
+
+## 🚀 Principais Funcionalidades Implementadas
+
+- ✅ **Gestão de Ocorrências:** Importação de planilhas (Excel) com validação de dados, listagem dinâmica e painel de métricas.
+- ✅ **Integração com a SEFAZ:** Consulta automatizada de NFDs (Nota Fiscal de Devolução) via Certificado Digital A1. O sistema baixa o XML oficial, extrai os dados (Emitente, Destinatário, Transportadora, Valores) e preenche o sistema automaticamente.
+- ✅ **Acompanhamento de Coletas:** Registro e controle do status de coletas por transportadora.
+- ✅ **Validação de NFD:** Módulo completo para consultar a SEFAZ (via chave de 44 dígitos), importar XML/PDF e armazenar o XML completo para auditoria.
+- ✅ **Painel Financeiro:** Visão de descontos concedidos e controle de processos pendentes/concluídos.
+- ✅ **Design Minimalista:** Interface limpa e moderna (Clean UI) com foco na usabilidade.
+
+---
 
 ## 🛠 Stack Tecnológica
-- **Frontend:** React
-- **Backend:** Node.js (Express)
-- **Banco de Dados:** Supabase (PostgreSQL)
-- **Automação:** APIs de transportadoras (Braspress, Daytona, Correios)
-- **Notificações:** Firebase + Nodemailer
 
+### **Frontend**
+- **React** (Hooks, Componentes Funcionais)
+- **CSS Modules / Global CSS** (Design System minimalista)
+- **Comunicação com API** via `fetch` (Cliente HTTP customizado)
 
-## 📌 Visão Geral
-Este sistema foi desenvolvido para automatizar e otimizar o fluxo de devoluções, garantindo maior controle e transparência em cada etapa do processo.
+### **Backend**
+- **Node.js** + **Express**
+- **PostgreSQL** (Banco de dados relacional local via Docker)
+- **@vexta-systems/node-mde** (Integração SEFAZ)
+- **xml2js** (Parser de XML)
+- **JWT / Bcrypt** (Autenticação e segurança)
 
+### **Infraestrutura e Ferramentas**
+- **Docker & Docker Compose** (Containerização do banco de dados)
+- **Git & GitHub** (Versionamento)
+- **Postman** (Testes de API)
+
+---
 
 ## 📂 Estrutura do Projeto
 
-junoimportadora-devolucao-sistema/
-
-├── docs/               # Documentação do projeto
-
-├── backend/            # Código do backend
-
-├── frontend/           # Código do frontend
-
-└── README.md           # Este arquivo
-
-## 🛠 Tecnologias Utilizadas
-
-Frontend: React, React Native
-Backend: Node.js (Express)
-Banco de Dados: Supabase (PostgreSQL)
-Integrações: APIs de transportadoras, Firebase
-Ferramenta de testes: Postman 
-
----
-
-## 🚶‍➡️ Próximos Passos
-
-Implementar Rotas para NFD:
-Criar rotas para upload e validação de Notas Fiscais de Devolução (NFD).
-
-Acompanhamento de Coletas:
-Implementar rotas para rastrear e atualizar o status das coletas.
-
-Painel Financeiro:
-Desenvolver rotas para gerenciar e visualizar informações financeiras.
-
-Integração com APIs de Transportadoras:
-Conectar o sistema às APIs das transportadoras para rastreamento e agendamento de coletas.
-
-Testes e Validações:
-Testar todas as funcionalidades no Postman para garantir que tudo está funcionando conforme esperado.
-
----
-
-## 🤝 Contribuição
-Se você deseja contribuir com o projeto, siga os passos abaixo:
-
-Faça um fork do projeto.
-Crie uma branch para sua feature (git checkout -b feature/sua-feature).
-Commit suas mudanças (git commit -m 'Adiciona nova feature').
-Faça push para a branch (git push origin feature/sua-feature).
-Abra um Pull Request.
-
-## 📧 Contato
-Para dúvidas ou sugestões, entre em contato:
-
-E-mail: devaldo@junoimportadora.com.br
-
-GitHub: devaldonas
+```text
+DEVOLUÇÃO/
+├── Backend/
+│   ├── src/
+│   │   ├── config/         # Configuração do PostgreSQL e variáveis
+│   │   ├── controllers/    # Regras de negócio (Ocorrências, NFD, SEFAZ)
+│   │   ├── middlewares/    # Autenticação
+│   │   ├── routes/         # Rotas da API (RESTful)
+│   │   └── services/       # Integração com SEFAZ
+│   ├── certs/              # Certificado Digital (A1)
+│   └── .env                # Variáveis de ambiente
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── components/     # Ocorrências, Validação NFD, Coletas, Financeiro
+│   │   ├── services/       # Cliente HTTP customizado
+│   │   └── App.js
+│   └── .env
+│
+└── README.md
