@@ -1,4 +1,4 @@
-# 🧴 Sistema de Gestão e Controle de Devoluções - Importadora de Perfumes
+#  Sistema de Gestão e Controle de Devoluções - Importadora de Perfumes
 
 > **Status do Projeto:** 🟢 Em desenvolvimento ativo (Backend e Banco de Dados 100% funcionais em ambiente local)
 
